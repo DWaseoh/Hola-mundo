@@ -17,16 +17,15 @@ class Personaje():
         print(self.nombre)
 
 def combatir (ataque, defensa):
-    vida = dani.vida
-    zombie =1000000
-    while vida > 0 or zombie > 0:
+    dani.vida
+    while dani.vida > 0:
         el = input("Elige atacar o defender (a/d)>")
         if el == "a":
             print("Le quitas 20 al zombie")
-            vida = dani.vida - 50
-            print("El zombie te ha quitado 50, te quedan " + str(vida))
+            dani.vida = dani.vida - 50
+            print("El zombie te ha quitado 50, te quedan " + str(dani.vida))
         elif el == "d":
-            print("Te has defendido, te queda " +  str(vida))
+            print("Te has defendido, te queda " +  str(dani.vida))
         else:
             break
 
